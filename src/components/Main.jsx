@@ -22,9 +22,19 @@ export default function Main() {
                 />
                 <input type="submit" value="+ Add ingredient"/>
             </form>
-            <ul className='ingredientsList'>
-                {ingredientsListItems}
-            </ul>
+            {ingredients.length > 0 ? <section>
+                <h2>Ingredients on hand:</h2>
+                <ul className='ingredientsList' aria-live='polite'>
+                    {ingredientsListItems}
+                </ul>
+                <div className="getRecipeContainer">
+                    <div className='generateRecipeText'>
+                        <h3>Ready for a recipe?</h3>
+                        <p>Generate a recipe from your list of ingredients.</p>
+                    </div>
+                    <button>Get a recipe.</button>
+                </div>
+            </section> : null}
         </main>
     )
 }
