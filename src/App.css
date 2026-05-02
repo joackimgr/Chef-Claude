@@ -50,11 +50,13 @@ input[type="submit"] {
   width: 150px;
   font-size: 0.875rem;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .ingredientsList {
   width: fit-content;
   margin: 20px auto;
+  color: #475467;
 }
 
 .ingredientsList li {
@@ -74,6 +76,7 @@ section {
   gap: 50px;
   background-color: #F0EFEB;
   padding: 20px 40px;
+  color: #475467;
 }
 
 .getRecipeContainer button {
@@ -85,4 +88,15 @@ section {
   padding: 10px 20px;
   font-size: 1rem;
   cursor: pointer;
+}
+
+.suggestedRecipeContainer {
+    color: #475467;
+    line-height: 28px;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.suggestedRecipeContainer ul li, .suggestedRecipeContainer ol li {
+    margin-bottom: 8px;
 }
